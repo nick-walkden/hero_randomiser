@@ -27,7 +27,8 @@ def show_random():
     text += "E (Circle) Ability: {h.eAbility.name} <br />"
     text += "R (Triangle) Ultimate: {h.rAbility.name}"
 
-    return text.format(h=new_hero)
+    #return text.format(h=new_hero)
+    return render_template('layout.html',hero=new_hero)
 
 if __name__=='__main__':
     app.run()

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>
+        Paragon Hero Randomiser!
+    </title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+ <div class=page>  
+    <h1>
+        Paragon Hero Randomiser!
+    </h1>
+    <div class="ability r" id="rability">
+        <div id="name"> <br><hr/><em>{{hero.rAbility.name}}</em> </div>
+        <img id="PC-icon" src={{url_for('static',filename='Icon-PC-R.png')}}></img>
+        <img id="PS4-icon" src={{url_for('static',filename='Icon-PS4-Triangle.png')}}></img>
+        
+        
+    </div>
+    <div class="ability e" id="eability">
+        <div id="name"> <br><hr/><em>{{hero.eAbility.name}}</em> </div>
+        <img id="PC-icon" src={{url_for('static',filename='Icon-PC-E.png')}}></img>
+        <img id="PS4-icon" src={{url_for('static',filename='Icon-PS4-Circle.png')}}></img>
+    </div>
+    
+    <div class="ability q" id="qability">
+        <div id="name"> <br><hr/><em>{{hero.qAbility.name}}</em> </div>
+        <img id="PC-icon" src={{url_for('static',filename='Icon-PC-Q.png')}}></img>
+        <img id="PS4-icon" src={{url_for('static',filename='Icon-PS4-Square.png')}}></img>
+    </div>
+    <div class="ability rmb" id="rmbability">
+        <div id="name"> <br><hr/><em>{{hero.rmbAbility.name}}</em> </div>
+        <img id="PC-icon" src={{url_for('static',filename='Icon-PC-Right_Mouse.png')}}></img>
+        <img id="PS4-icon" src={{url_for('static',filename='Icon-PS4-R1.png')}}></img>
+    </div>
+    <div class="ability lmb" id="lmbability">
+        <div id="name"> <br><hr/><em>{{hero.lmbAbility.name}}</em> </div>
+        <img id="PC-icon" src={{url_for('static',filename='Icon-PC-Left_Mouse.png')}}></img>
+        <img id="PS4-icon" src={{url_for('static',filename='Icon-PS4-R2.png')}}></img>
+    </div>
+ </div>   
+</body>
+
+
+</html>

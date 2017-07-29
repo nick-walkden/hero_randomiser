@@ -1,0 +1,14 @@
+body            { font-family: sans-serif; background: #ddd;font-style:normal; }
+a, h1, h2       { color: #377ba8; text-align:center;}
+
+.page           { margin: 2em auto; width: 900px; border: 5px solid #ccc; border-left: 5px solid #eee; border-bottom: 5px solid #eee;
+                  padding: 0.8em; background: white; }
+.ability        {width: 170px; height:65px; background: white; margin: 20px auto; border: 5px solid white; border-right: 5px solid white; border-top: 5px solid white;
+                  padding:5px; text-align:center;}
+
+.ability img  {width:30px; padding:10px; position:relative; top:-67px;}
+.r            {position:relative; left:0px; top:0px;}
+.e            {position:relative; right:-300px; top:40px;}
+.q            {position:relative; left:-300px; top:-65px;}
+.rmb          {position:relative; right:-150px; bottom:-105px;}
+.lmb          {position:relative; left:-150px; top:0px;}
