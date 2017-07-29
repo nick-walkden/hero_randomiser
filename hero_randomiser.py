@@ -19,14 +19,6 @@ def show_random():
     for tag in ability_tags:
         n = random.randint(0,N-1)
         new_hero.setAbility(tag,register[names[n]].getAbility(tag))
-
-
-    text = "LMB (R2) Ability: {h.lmbAbility.name} <br />"
-    text += "RMB (R1) Ability: {h.rmbAbility.name} <br />"
-    text += "Q (Square) Ability: {h.qAbility.name} <br />"
-    text += "E (Circle) Ability: {h.eAbility.name} <br />"
-    text += "R (Triangle) Ultimate: {h.rAbility.name}"
-
     #return text.format(h=new_hero)
     return render_template('layout.html',hero=new_hero)
 
